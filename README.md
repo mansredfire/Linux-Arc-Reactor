@@ -5,7 +5,7 @@
 ```
                               ╔═══════════════════════════════════════════════════════════════════╗
                               ║                                                                   ║
-                              ║              ⚡ LINUX SECURITY TOOLS INSTALLER ⚡                ║
+                              ║                     ⚡ LINUX ARC REACTOR ⚡                      ║
                               ║       Modern Tools to Complement Your Linux Distribution          ║
                               ║                                                                   ║
                               ║          Automated Installation of 50+ Security Tools             ║
