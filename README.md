@@ -1,4 +1,4 @@
-# Linux Security Tools - Bash Installation Guide (Non-Kali Systems)
+# Linux Security Tools - Bash Installation Guide
 
 ## 📋 Table of Contents
 - [Overview](#overview)
@@ -20,7 +20,7 @@
 
 ## 🎯 Overview
 
-Automated Bash script that installs 50+ security tools on Linux systems (Ubuntu/Debian/Fedora/Arch) that are **NOT** pre-installed in Kali Linux by default.
+Automated Bash script that installs 50+ security tools on Linux systems that are **NOT** pre-installed in Kali Linux by default.
 
 ### Key Difference from Kali Linux
 
@@ -2936,37 +2936,190 @@ A: Yes, but run script as regular user. It will request sudo when needed.
 
 ---
 
-### Tool-Specific Questions
+### Community Resources
 
-**Q: What's the difference between this and Kali's tools?**
-A: This installs latest versions of modern tools not in Kali's repos. Examples: ProjectDiscovery suite (nuclei, subfinder), latest FFUF, modern Go-based tools.
+**Discord Servers**:
+- ProjectDiscovery: https://discord.gg/projectdiscovery
+- Bug Bounty Hunters: Various servers for platforms
 
-**Q: Can I use both Kali's and these tools?**
-A: Yes! Tools install to `~/go/bin` and won't conflict with Kali's `/usr/bin` tools.
+**Forums**:
+- Reddit: r/netsec, r/AskNetsec, r/bugbounty
+- Stack Overflow: Security tag
 
-**Q: Which tools should I learn first?**
-A: Start with:
-1. Subfinder (subdomain enumeration)
-2. Httpx (probing)
-3. Nuclei (vulnerability scanning)
-4. FFUF (fuzzing)
-
-**Q: Are these tools better than Kali's defaults?**
-A: Different, not necessarily better:
-- Nuclei: Template-based scanning (complement to traditional scanners)
-- Subfinder: Modern subdomain enum (faster than some alternatives)
-- Httpx: Efficient probing (complements nmap)
-- FFUF: Fast fuzzer (comparable to gobuster)
+**Learning Platforms**:
+- HackTheBox: https://www.hackthebox.com
+- TryHackMe: https://tryhackme.com
+- PentesterLab: https://pentesterlab.com
+- PortSwigger Web Security Academy: https://portswigger.net/web-security
 
 ---
 
-### Bug Bounty Questions
+### Bug Bounty Platforms
 
-**Q: Are these tools enough for bug bounty hunting?**
-A: These tools cover 80% of reconnaissance and scanning. You'll also need:
-- Manual testing skills
-- Burp Suite (in Kali)
-- Understanding of vulnerabilities
+- **HackerOne**: https://www.hackerone.com
+- **Bugcrowd**: https://www.bugcrowd.com
+- **Intigriti**: https://www.intigriti.com
+- **YesWeHack**: https://www.yeswehack.com
+- **Synack**: https://www.synack.com
+
+---
+
+### Getting Help
+
+**Script Issues**:
+- Check log file: `$env:USERPROFILE\security-tools-install.log`
+- Review troubleshooting section
+- Search existing GitHub issues
+- Create new GitHub issue with log file
+
+**Tool-Specific Issues**:
+- Check tool's official documentation
+- Search tool's GitHub issues
+- Ask in tool's Discord/forum
+- Create issue on tool's repository
+
+**General Security Questions**:
+- r/AskNetsec on Reddit
+- Information Security Stack Exchange
+- Security-focused Discord servers
+
+---
+
+### Additional Resources
+
+**Security Research Blogs**:
+- PortSwigger Research: https://portswigger.net/research
+- ProjectDiscovery Blog: https://blog.projectdiscovery.io
+- Google Project Zero: https://googleprojectzero.blogspot.com
+
+**Bug Bounty Writeups**:
+- HackerOne Hacktivity: https://hackerone.com/hacktivity
+- Pentester Land: https://pentester.land
+- Medium Bug Bounty tag
+
+**Video Tutorials**:
+- YouTube: Search for specific tools
+- Udemy/Coursera: Security courses
+- PentesterAcademy: Video courses
+
+---
+
+## 📄 License & Legal
+
+### Tools Licenses
+
+Different tools have different licenses. Most are open source:
+
+- **MIT License**: Nuclei, Subfinder, Httpx, many others
+- **GPL**: OWASP ZAP, some Sysinternals tools
+- **Apache 2.0**: Amass, some Go tools
+- **Commercial**: Burp Suite Pro (Community version is free)
+
+**Check individual tool licenses before commercial use**.
+
+---
+
+### Script License
+
+This installation script is provided "as is" without warranty.
+
+**Usage Terms**:
+- ✅ Personal use
+- ✅ Educational use
+- ✅ Commercial use (script itself, not necessarily all tools)
+- ✅ Modification and redistribution
+
+**Disclaimer**:
+```
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+---
+
+### Legal Disclaimer
+
+⚠️ **IMPORTANT LEGAL NOTICE**
+
+This tool collection is intended for:
+- Authorized security testing
+- Educational purposes
+- Security research
+- Bug bounty programs
+- Penetration testing with written permission
+
+**Unauthorized use of these tools is illegal and may result in:**
+- Criminal prosecution
+- Civil liability
+- Termination of employment
+- Termination from educational institutions
+- Blacklisting from bug bounty programs
+
+**Users are responsible for:**
+- Obtaining proper authorization before testing
+- Following all applicable laws and regulations
+- Respecting privacy and data protection laws
+- Following responsible disclosure practices
+- Understanding and accepting risks
+
+**By using this script and tools, you agree to:**
+- Use tools only on authorized targets
+- Follow all applicable laws
+- Accept full responsibility for your actions
+- Not hold script author liable for misuse
+
+---
+
+## 🎉 Conclusion
+
+You now have a comprehensive Windows security testing toolkit installed and ready to use.
+
+
+### Next Steps
+
+1. **Familiarize yourself with tools**:
+   - Start with basic tools (Subfinder, Httpx, Nuclei)
+   - Practice on authorized targets
+   - Follow tool documentation
+
+2. **Join bug bounty platforms**:
+   - Create accounts on HackerOne, Bugcrowd
+   - Read program scopes carefully
+   - Start with easy targets
+
+3. **Practice safely**:
+   - Use HackTheBox, TryHackMe
+   - Set up home lab
+   - Follow responsible disclosure
+
+4. **Stay updated**:
+   - Update Nuclei templates weekly
+   - Update tools monthly
+   - Follow security researchers on Twitter
+
+5. **Learn continuously**:
+   - Read writeups and blogs
+   - Watch tutorials and courses
+   - Participate in CTFs
+   - Join security communities
+
+---
+
+### Stay Secure, Stay Legal, Happy Hunting! 🎯
+
+Remember: With great tools comes great responsibility. Always get permission before testing!
+
+---
+
+**Version**: 1.0.0  
+**Last Updated**: 2024  
+**Maintained By**: Security Tools Community
+
 - Report writing skills
 
 **Q: Which tools are most valuable for bug bounties?**
