@@ -18,7 +18,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 **Enhance your security arsenal** - Automated installation of modern security tools for any Linux distribution.
-
+```
 ## 📋 Table of Contents
  [Overview](#overview)
  [System Requirements](#system-requirements)
