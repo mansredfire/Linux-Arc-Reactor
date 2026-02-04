@@ -3,14 +3,14 @@
 <div align="center">
 
 ```
-                    ╔═══════════════════════════════════════════════════════════════════╗
-                    ║                                                                   ║
-                    ║              ⚡ LINUX SECURITY TOOLS INSTALLER ⚡                ║
-                    ║       Modern Tools to Complement Your Linux Distribution          ║
-                    ║                                                                   ║
-                    ║          Automated Installation of 50+ Security Tools             ║
-                    ║                                                                   ║
-                    ╚═══════════════════════════════════════════════════════════════════╝
+                              ╔═══════════════════════════════════════════════════════════════════╗
+                              ║                                                                   ║
+                              ║              ⚡ LINUX SECURITY TOOLS INSTALLER ⚡                ║
+                              ║       Modern Tools to Complement Your Linux Distribution          ║
+                              ║                                                                   ║
+                              ║          Automated Installation of 50+ Security Tools             ║
+                              ║                                                                   ║
+                              ╚═══════════════════════════════════════════════════════════════════╝
 ```
 
 [![Bash](https://img.shields.io/badge/Bash-4.0+-green.svg)](https://www.gnu.org/software/bash/)
