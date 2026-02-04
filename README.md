@@ -19,7 +19,23 @@
 
 **Enhance your security arsenal** - Automated installation of modern security tools for any Linux distribution.
 
-[Installation](#-installation-instructions) • [Tools](#-complete-tool-list) • [Usage](#-tool-usage-examples) • [Troubleshooting](#-troubleshooting)
+## 📋 Table of Contents
+- [Overview](#overview)
+- [System Requirements](#system-requirements)
+- [Pre-Installation Checklist](#pre-installation-checklist)
+- [Installation Instructions](#installation-instructions)
+- [What Gets Installed](#what-gets-installed)
+- [Installation Locations](#installation-locations)
+- [Post-Installation Steps](#post-installation-steps)
+- [Tool Usage Examples](#tool-usage-examples)
+- [Troubleshooting](#troubleshooting)
+- [Complete Tool List](#complete-tool-list)
+- [Updating Tools](#updating-tools)
+- [Uninstallation](#uninstallation)
+- [Security Considerations](#security-considerations)
+- [FAQ](#faq)
+
+---
 
 </div>
 
