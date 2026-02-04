@@ -1,4 +1,4 @@
-# Linux Security Tools Installation Script (Non-Kali Tools Only)
+# Linux Security Tools Installation Script
 
 ```bash
 #!/bin/bash
@@ -10,9 +10,9 @@
 #              1. NOT pre-installed on Kali Linux by default
 #              2. FROM the comprehensive tools list provided
 #
-# Author: Security Tools Installer
+# Author: mansredfire
 # Version: 1.0.0
-# Requires: Ubuntu/Debian/Fedora/Arch (NOT Kali Linux)
+# Requires: Ubuntu/Debian/Fedora/Arch/Kali
 #############################################################################
 
 set -e
@@ -41,8 +41,8 @@ print_banner() {
     cat << "EOF"
 ╔═══════════════════════════════════════════════════════════════════╗
 ║                                                                   ║
-║              ⚡ LINUX SECURITY TOOLS INSTALLER ⚡                 ║
-║         Tools NOT Pre-Installed on Kali Linux                     ║
+║           ⚡ LINUX SECURITY TOOLS INSTALLER ⚡                   ║
+║           Tools NOT Pre-Installed on Kali Linux                   ║
 ║                                                                   ║
 ║          Installing 50+ Additional Security Tools                 ║
 ║                                                                   ║
@@ -92,7 +92,7 @@ detect_os() {
 
 check_not_kali() {
     if grep -qi "kali" /etc/os-release 2>/dev/null; then
-        print_error "This script is for NON-Kali systems only"
+        print_error "This script is for Linux systems only"
         print_info "Kali Linux already includes most tools"
         print_info "Run this on Ubuntu, Debian, Fedora, or Arch"
         exit 1
@@ -219,7 +219,7 @@ install_dependencies() {
 }
 
 #############################################################################
-# GO TOOLS (NOT IN KALI)
+# GO TOOLS
 #############################################################################
 
 install_go_tools() {
@@ -302,7 +302,7 @@ install_go_tools() {
 }
 
 #############################################################################
-# PYTHON TOOLS (NOT IN KALI)
+# PYTHON TOOLS 
 #############################################################################
 
 install_python_tools() {
@@ -378,7 +378,7 @@ install_python_tools() {
 }
 
 #############################################################################
-# MASSCAN (NOT IN KALI DEFAULT)
+# MASSCAN 
 #############################################################################
 
 install_masscan() {
@@ -635,7 +635,7 @@ show_summary() {
     echo -e "${BLUE}Log File: $LOG_FILE${NC}"
     echo ""
     echo -e "${YELLOW}═══════════════════════════════════════════════════${NC}"
-    echo -e "${YELLOW}  TOOLS INSTALLED (NOT IN KALI LINUX)${NC}"
+    echo -e "${YELLOW}  TOOLS INSTALLED ${NC}"
     echo -e "${YELLOW}═══════════════════════════════════════════════════${NC}"
     echo ""
     echo -e "${CYAN}📡 Network Scanning:${NC}"
