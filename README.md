@@ -144,37 +144,37 @@ sudo apt update && sudo apt full-upgrade -y
 ### Method 1: Standard Installation (Recommended)
 
 #### Step 1: Download the Script
-Save `install_non_kali_tools.sh` to your home directory:
+Save `ArcReactor.sh` to your home directory:
 
 ```bash
 # If downloaded to ~/Downloads
 cd ~/Downloads
 
 # Or download directly (if hosted)
-# wget https://your-url/install_non_kali_tools.sh
+# wget https://your-url/ArcReactor.sh
 ```
 
 #### Step 2: Make Script Executable
 ```bash
-chmod +x install_non_kali_tools.sh
+chmod +x ArcReactor.sh
 ```
 
 #### Step 3: Verify Script Integrity (Optional but Recommended)
 ```bash
 # View script contents to ensure it's safe
-less install_non_kali_tools.sh
+less ArcReactor.sh
 
 # Check first 50 lines
-head -50 install_non_kali_tools.sh
+head -50 ArcReactor.sh
 
 # Search for suspicious commands
-grep -E "rm -rf|format|mkfs|dd if=" install_non_kali_tools.sh
+grep -E "rm -rf|format|mkfs|dd if=" ArcReactor.sh
 ```
 
 #### Step 4: Run Installation
 ```bash
 # Run as regular user (NOT with sudo)
-./install_non_kali_tools.sh
+./ArcReactor.sh
 ```
 
 **Important Notes**:
@@ -190,7 +190,7 @@ grep -E "rm -rf|format|mkfs|dd if=" install_non_kali_tools.sh
 ### Method 2: Quick One-Liner
 
 ```bash
-chmod +x install_non_kali_tools.sh && ./install_non_kali_tools.sh
+chmod +x ArcReactor.sh && ./ArcReactor.sh
 ```
 
 ---
@@ -199,14 +199,14 @@ chmod +x install_non_kali_tools.sh && ./install_non_kali_tools.sh
 
 ```bash
 # Using wget
-wget https://your-url/install_non_kali_tools.sh
-chmod +x install_non_kali_tools.sh
-./install_non_kali_tools.sh
+wget https://your-url/ArcReactor.sh
+chmod +x ArcReactor.sh
+./ArcReactor.sh
 
 # Or using curl
-curl -O https://your-url/install_non_kali_tools.sh
-chmod +x install_non_kali_tools.sh
-./install_non_kali_tools.sh
+curl -O https://your-url/ArcReactor.sh
+chmod +x ArcReactor.sh
+./ArcReactor.sh
 ```
 
 ---
@@ -1684,7 +1684,7 @@ This script is designed to add tools NOT in Kali's default repos. If you're on K
 
 ```bash
 # Option 1: Comment out the Kali check
-nano install_non_kali_tools.sh
+nano ArcReactor.sh
 
 # Find and comment out these lines (add # at beginning):
 # if grep -qi "kali" /etc/os-release 2>/dev/null; then
@@ -1693,7 +1693,7 @@ nano install_non_kali_tools.sh
 # fi
 
 # Then run script
-./install_non_kali_tools.sh
+./ArcReactor.sh
 ```
 
 **Or use Kali's package manager for standard tools**:
@@ -1711,14 +1711,14 @@ sudo apt install nmap sqlmap metasploit-framework burpsuite zaproxy
 **Solution**:
 ```bash
 # Make script executable
-chmod +x install_non_kali_tools.sh
+chmod +x ArcReactor.sh
 
 # Verify permissions
-ls -l install_non_kali_tools.sh
+ls -l ArcReactor.sh
 # Should show: -rwxr-xr-x
 
 # Run script (NOT with sudo)
-./install_non_kali_tools.sh
+./ArcReactor.sh
 ```
 
 ---
@@ -1968,7 +1968,7 @@ go install <package-path>@latest
 python3 -m pip install <package-name>
 
 # Re-run script (it will skip installed tools)
-./install_non_kali_tools.sh
+./ArcReactor.sh
 ```
 
 ---
